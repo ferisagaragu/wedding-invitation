@@ -1,0 +1,48 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary-color: (
+  500: #6D2741,
+  contrast: (
+    500: white
+  )
+);
+
+$accent-color: (
+  500: #D0B072,
+  contrast: (
+    500: black
+  )
+);
+
+$palette-primary: mat-palette($primary-color, 500);
+$palette-accent:  mat-palette($accent-color, 500);
+$theme: mat-light-theme($palette-primary, $palette-accent);
+
+@include angular-material-theme($theme);
+
+html, body { height: 100%; }
+body { margin: 0; }
+*{ font-family: JosefinSans-Regular; }
+
+.primary-color {
+  color: white !important;
+  background: #6D2741 !important;
+}
+
+.primary-color>.mat-icon {
+  color: white !important;
+}
+
+.accent-color {
+  color: black !important;
+  background: #D0B072 !important;
+}
+
+.accent-color>.mat-icon {
+  color: black !important;
+}
+
+table {
+  width: 100%;
+}
