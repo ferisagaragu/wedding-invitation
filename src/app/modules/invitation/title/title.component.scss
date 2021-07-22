@@ -1,0 +1,67 @@
+.music {
+  position: fixed;
+  z-index: -1;
+}
+
+.image-container {
+  background-image: url('~src/assets/img/title.jpeg');
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.shadow-container {
+  background-color: #2F2D28;
+  opacity: 0.5;
+  width: 100%;
+  height: 800px;
+  z-index: -1;
+}
+
+.text-container {
+  font-family: 'Alice-Regular';
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  top: 0;
+  left: 0;
+  opacity: initial !important;
+  color: white;
+  transform: translateY(-510px);
+  height: 800px;
+  text-align: center;
+}
+
+.title-us-container {
+  margin-top: 10px;
+  font-size: 26px !important;
+  text-transform: none;
+}
+
+.us-history-container {
+  margin-top: 20px;
+  font-family: var(--bs-font-sans-serif) !important;
+}
+
+.line {
+  background: #0d66c2;
+  color: #0d66c2;
+  height: 1px;
+  width: 40px;
+}
+
+/*.title-container {
+  font-family: 'Alice-Regular';
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 75px;
+}*/
