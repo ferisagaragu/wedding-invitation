@@ -1,0 +1,34 @@
+<!--autoplay-->
+<audio #audioPlayer controls>
+  <source src="assets/mp3/perfect.mp3" type="audio/mp3">
+  audio
+</audio>
+
+<div class="guest-message-container wow animate__animated animate__slow animate__bounceInLeft">
+  <div class="primary-decorator"></div>
+
+  <div>
+    <h3 class="p-4">
+      Los invitamos a ustedes la familia <br>
+      <strong class="accent-text">
+        García Lozano
+      </strong> <br>
+      a compartir la magia de nuestro amor
+    </h3>
+  </div>
+
+  <button
+    mat-stroked-button
+    class="pulse"
+    color="accent"
+    (click)="play()"
+  >
+    <mat-icon>
+      favorite
+    </mat-icon>
+
+    Siente nuestro amor
+  </button>
+
+  <div class="primary-decorator mt-4"></div>
+</div>

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
+import { NgwWowModule } from 'ngx-wow';
+
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es-MX';
 
@@ -19,7 +21,8 @@ registerLocaleData(localeEs, 'es');
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgwWowModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es' }

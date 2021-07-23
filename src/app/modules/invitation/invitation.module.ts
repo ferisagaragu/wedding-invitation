@@ -4,16 +4,20 @@ import { CommonModule } from '@angular/common';
 import { InvitationRoutingModule } from './invitation-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TitleComponent } from './title/title.component';
+import { GuestMessageComponent } from './guest-message/guest-message.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    TitleComponent
+    TitleComponent,
+    GuestMessageComponent
   ],
   imports: [
     CommonModule,
-    InvitationRoutingModule
+    InvitationRoutingModule,
+    SharedModule
   ]
 })
 export class InvitationModule { }
