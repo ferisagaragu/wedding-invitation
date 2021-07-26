@@ -19,6 +19,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 // @ts-ignore
 import { UrxGridModule } from 'ng-urxnium';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [],
@@ -39,6 +40,7 @@ import { UrxGridModule } from 'ng-urxnium';
     MatSelectModule,
     MatCheckboxModule,
     MatTooltipModule,
+    IvyCarouselModule,
     UrxGridModule
   ],
   exports: [
@@ -56,7 +58,8 @@ import { UrxGridModule } from 'ng-urxnium';
     MatFormFieldModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatTooltipModule
+    MatTooltipModule,
+    IvyCarouselModule
   ]
 })
 export class SharedModule { }

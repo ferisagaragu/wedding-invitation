@@ -9,6 +9,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { DedicationComponent } from './dedication/dedication.component';
 import { GodparentsComponent } from './godparents/godparents.component';
 import { BiblicalQuoteComponent } from './biblical-quote/biblical-quote.component';
+import { TimerComponent } from './timer/timer.component';
+import { MomentComponent } from './moment/moment.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { BiblicalQuoteComponent } from './biblical-quote/biblical-quote.componen
     GuestMessageComponent,
     DedicationComponent,
     GodparentsComponent,
-    BiblicalQuoteComponent
+    BiblicalQuoteComponent,
+    TimerComponent,
+    MomentComponent
   ],
   imports: [
     CommonModule,
