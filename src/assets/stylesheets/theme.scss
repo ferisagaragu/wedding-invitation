@@ -22,7 +22,7 @@ $theme: mat-light-theme($palette-primary, $palette-accent);
 @include angular-material-theme($theme);
 
 html, body { height: 100%; }
-body { margin: 0; }
+body { margin: 0; background: rgba(213, 181, 156, 0.11) !important; }
 *{ font-family: JosefinSans-Regular; }
 
 .primary-color {

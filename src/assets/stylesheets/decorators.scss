@@ -1,0 +1,49 @@
+.primary-decorator {
+  width: 100%;
+  height: 80px;
+  background-image: url('~src/assets/img/principal-decorator.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: #D0B072;
+}
+
+.title-cursive {
+  font-family: GreatVibes-Regular;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: #D0B072;
+  letter-spacing: 2px;
+}
+
+.title-flower {
+  background-image: url(~src/assets/img/flower-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+}
+
+.title-flower-text {
+  padding-top: 55px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: #D0B072;
+}
+
+.sub-title {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #D0B072;
+}
+
+.title-before-margin {
+  margin-top: 68px;
+}

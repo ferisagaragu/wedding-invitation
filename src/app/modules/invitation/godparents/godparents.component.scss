@@ -1,0 +1,50 @@
+button {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-5px);
+  width: 32px;
+  height: 32px;
+  font-size: 10px;
+  padding-top: -5px;
+}
+
+mat-icon {
+  position: absolute;
+  margin-top: -8px;
+  margin-left: -12px;
+}
+
+.godparent {
+  width: 100%;
+  text-align: center;
+}
+
+.wife-background {
+  display: inline-block;
+  background-image: url('~src/assets/img/wife.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 64px;
+}
+
+.wife-text {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.husband-background {
+  display: inline-block;
+  background-image: url('~src/assets/img/husband.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 64px;
+}
+
+.wife-text {
+  display: inline-block;
+  margin-right: 15px;
+}
