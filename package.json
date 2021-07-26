@@ -23,7 +23,7 @@
     "@mdi/font": "^5.9.55",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.2",
-    "ng-urxnium": "^2.0.1",
+    "ng-urxnium": "^2.1.2",
     "ngx-wow": "^2.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

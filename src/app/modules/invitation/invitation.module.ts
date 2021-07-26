@@ -8,6 +8,7 @@ import { GuestMessageComponent } from './guest-message/guest-message.component';
 import { SharedModule } from '../../shared/shared.module';
 import { DedicationComponent } from './dedication/dedication.component';
 import { GodparentsComponent } from './godparents/godparents.component';
+import { BiblicalQuoteComponent } from './biblical-quote/biblical-quote.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { GodparentsComponent } from './godparents/godparents.component';
     TitleComponent,
     GuestMessageComponent,
     DedicationComponent,
-    GodparentsComponent
+    GodparentsComponent,
+    BiblicalQuoteComponent
   ],
   imports: [
     CommonModule,
