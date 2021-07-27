@@ -11,6 +11,7 @@ import { GodparentsComponent } from './godparents/godparents.component';
 import { BiblicalQuoteComponent } from './biblical-quote/biblical-quote.component';
 import { TimerComponent } from './timer/timer.component';
 import { MomentComponent } from './moment/moment.component';
+import { LocationComponent } from './location/location.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MomentComponent } from './moment/moment.component';
     GodparentsComponent,
     BiblicalQuoteComponent,
     TimerComponent,
-    MomentComponent
+    MomentComponent,
+    LocationComponent
   ],
   imports: [
     CommonModule,

@@ -18,7 +18,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 // @ts-ignore
-import { UrxGridModule } from 'ng-urxnium';
+import { UrxGridModule, UrxLocationModule } from 'ng-urxnium';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
@@ -41,7 +41,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     MatCheckboxModule,
     MatTooltipModule,
     IvyCarouselModule,
-    UrxGridModule
+    UrxGridModule,
+    UrxLocationModule
   ],
   exports: [
     ReactiveFormsModule,
@@ -59,7 +60,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     MatSelectModule,
     MatCheckboxModule,
     MatTooltipModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    UrxLocationModule
   ]
 })
 export class SharedModule { }
