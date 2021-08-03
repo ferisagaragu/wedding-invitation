@@ -11,3 +11,13 @@ table {
   display: flex;
   justify-content: center;
 }
+
+.table-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.mat-elevation-z8 {
+  background: white;
+  height: 100%;
+}
