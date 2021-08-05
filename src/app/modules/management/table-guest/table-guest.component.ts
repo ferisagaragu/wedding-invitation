@@ -4,6 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { GuestService } from '../../../core/http/guest.service';
 import { ChipFilterComponent } from '../chip-filter/chip-filter.component';
+import { SweetAlert2Service } from 'ng-urxnium';
 
 @Component({
   selector: 'app-table-guest',
@@ -21,12 +22,18 @@ export class TableGuestComponent implements OnInit, AfterViewInit {
   searchText: string;
   useFilters: boolean;
   load: boolean;
+  selectedRow: any;
+  query: string;
 
-  constructor(private guestService: GuestService) {
+  constructor(
+    private guestService: GuestService,
+    private swal: SweetAlert2Service
+  ) {
     this.dataSource = new MatTableDataSource<any>();
     this.searchText = '';
     this.useFilters = false;
     this.load = false;
+    this.query = '';
   }
 
   ngOnInit() {
@@ -62,7 +69,30 @@ export class TableGuestComponent implements OnInit, AfterViewInit {
     }
   }
 
+  onSelectRow(row: any) {
+    this.selectedRow = row;
+  }
+
+  onRemove() {
+    this.swal.fire({
+      icon: 'warning',
+      theme: 'material',
+      title: '¿Segur@ que quieres eliminar el invitado?',
+      text: 'Si eliminas el invitado, este ya no aparecerá ' +
+        'en la invitación y no podrá recuperarse',
+      showCancelButton: true,
+      materialButtonsColor: '#6D2741'
+    }).subscribe(resp => {
+      if  (resp) {
+        this.guestService.deleteGuest(this.selectedRow.uuid).subscribe(resp => {
+          this.findAllGuest(this.query);
+        });
+      }
+    });
+  }
+
   private findAllGuest(query?: string) {
+    this.query = query ? query :'';
     this.dataSource.data = [];
     this.load = true;
 
@@ -74,6 +104,7 @@ export class TableGuestComponent implements OnInit, AfterViewInit {
       this.dataSource.data = resp.data;
       this.chipFilter.setDisabled(false);
       this.load = false;
+      this.selectedRow = null;
     });
   }
 

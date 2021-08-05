@@ -6,6 +6,12 @@
     (filter)="onSelectFilter($event)"
     (inputKeyup)="applyFilter($event)"
   >
+    <app-button-action
+      (remove)="onRemove()"
+      [disabledPlus]="load || useFilters || searchText !== ''"
+      [disabled]="load || !selectedRow"
+    >
+    </app-button-action>
   </app-chip-filter>
 
   <div class="table-container scroll">
@@ -55,7 +61,13 @@
       </ng-container>
 
       <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true;"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      <mat-row
+        *matRowDef="let row; columns: displayedColumns;"
+        class="pointer"
+        [class.primary-color-row]="selectedRow === row"
+        (click)="onSelectRow(row)"
+      >
+      </mat-row>
 
       <tr class="mat-row" *matNoDataRow>
         <td class="mat-cell" colspan="4">

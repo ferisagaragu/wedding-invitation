@@ -51,6 +51,18 @@ body { margin: 0; background: rgba(213, 181, 156, 0.11) !important; }
   color: #D0B072 !important;
 }
 
+.micro-fab {
+  width: 24px !important;
+  height: 24px !important;
+  background: white !important;
+}
+
+.micro-fab>span>em {
+  position: absolute;
+  transform: translateY(-14px) translateX(-6.5px) !important;
+}
+
 table {
   width: 100%;
 }
+

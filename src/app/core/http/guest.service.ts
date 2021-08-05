@@ -12,4 +12,8 @@ export class GuestService {
     return this.http.get(`http://localhost:5000/rest/guests${query ? query : ''}`);
   }
 
+  deleteGuest(uuid: string) {
+    return this.http.delete(`http://localhost:5000/rest/guests/${uuid}`);
+  }
+
 }
