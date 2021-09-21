@@ -3,7 +3,7 @@ import { DashboardComponent } from '../../modules/invitation/dashboard/dashboard
 
 export const INVITATION_ROUTING: Routes = [
   {
-    path: 'invitation',
+    path: 'invitation/:guestUuid',
     loadChildren: () => import('../../modules/invitation/invitation.module').then(m => m.InvitationModule)
   }
 ];

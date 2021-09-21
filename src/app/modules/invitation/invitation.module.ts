@@ -14,7 +14,9 @@ import { MomentComponent } from './moment/moment.component';
 import { LocationComponent } from './location/location.component';
 import { AdviceComponent } from './advice/advice.component';
 import { GiftComponent } from './gift/gift.component';
-
+import { SanitaryMeasuresComponent } from './sanitary-measures/sanitary-measures.component';
+import { FormGuestComponent } from './form-guest/form-guest.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { GiftComponent } from './gift/gift.component';
     MomentComponent,
     LocationComponent,
     AdviceComponent,
-    GiftComponent
+    GiftComponent,
+    SanitaryMeasuresComponent,
+    FormGuestComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,

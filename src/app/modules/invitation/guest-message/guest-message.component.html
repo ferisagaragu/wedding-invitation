@@ -1,7 +1,7 @@
 <!--autoplay-->
 <audio #audioPlayer controls>
   <source
-    src="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-8ad35.appspot.com/o/assets%2Fmp3%2Fperfect.mp3?alt=media&token=66764031-ea64-4a52-b03a-4467e5b2939e"
+    [src]="musicUrl"
     type="audio/mp3">
   audio
 </audio>
@@ -11,9 +11,11 @@
 
   <div>
     <h3 class="p-4">
-      Los invitamos a ustedes la familia <br>
+      {{ getGuestMessage(familyName) }}
+      <br>
+
       <strong class="accent-text">
-        García Lozano
+        {{ familyName }}
       </strong> <br>
       a compartir la magia de nuestro amor
     </h3>

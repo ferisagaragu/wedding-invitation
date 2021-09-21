@@ -13,22 +13,10 @@
   </div>
 
   <carousel [height]="300" class="mt-4">
-    <div class="carousel-cell">
-      <img src="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-8ad35.appspot.com/o/assets%2Fimg%2Fcarousel_1.jpeg?alt=media&token=9a01c960-2fc1-44af-b241-eb92774cf58a">
-    </div>
-
-    <div class="carousel-cell">
-      <img src="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-8ad35.appspot.com/o/assets%2Fimg%2Fcarousel_1.jpeg?alt=media&token=9a01c960-2fc1-44af-b241-eb92774cf58a">
-    </div>
-
-    <div class="carousel-cell">
-      <img src="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-8ad35.appspot.com/o/assets%2Fimg%2Fcarousel_1.jpeg?alt=media&token=9a01c960-2fc1-44af-b241-eb92774cf58a">
-    </div>
-
-    <div class="carousel-cell">
-      <img src="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-8ad35.appspot.com/o/assets%2Fimg%2Fcarousel_1.jpeg?alt=media&token=9a01c960-2fc1-44af-b241-eb92774cf58a">
+    <div *ngFor="let carouserMoment of carouselMoments" class="carousel-cell">
+      <img [src]="carouserMoment">
     </div>
   </carousel>
 
-  <iframe src="https://www.youtube.com/embed/nSDgHBxUbVQ"></iframe>
+  <iframe src="https://www.youtube.com/embed/W9APG35wQd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

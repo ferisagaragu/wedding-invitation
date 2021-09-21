@@ -16,10 +16,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-// @ts-ignore
 import { UrxAlertModule, UrxGridModule, UrxLocationModule } from 'ng-urxnium';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { NgQrScannerModule } from 'angular2-qrscanner';
 
 @NgModule({
   declarations: [],
@@ -40,7 +42,10 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     MatSelectModule,
     MatCheckboxModule,
     MatTooltipModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
     IvyCarouselModule,
+    NgQrScannerModule,
     UrxGridModule,
     UrxLocationModule,
     UrxAlertModule
@@ -61,7 +66,10 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     MatSelectModule,
     MatCheckboxModule,
     MatTooltipModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
     IvyCarouselModule,
+    NgQrScannerModule,
     UrxLocationModule,
     UrxAlertModule
   ]
