@@ -16,7 +16,7 @@ $accent-color: (
 );
 
 $palette-primary: mat-palette($primary-color, 500);
-$palette-accent:  mat-palette($accent-color, 500);
+$palette-accent: mat-palette($accent-color, 500);
 $theme: mat-light-theme($palette-primary, $palette-accent);
 
 @include angular-material-theme($theme);

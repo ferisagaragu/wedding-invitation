@@ -39,14 +39,37 @@ export class GuestMessageComponent {
 
   getGuestMessage(familyName: string): string {
     if (
-      (familyName.includes('Tia') || familyName.includes('Tía')) &&
+      (
+        familyName.includes('Tia') ||
+        familyName.includes('Tía') ||
+        familyName.includes('_f')
+      ) &&
       familyName.includes(' y ')
     ) {
       return 'Las invitamos a ustedes';
     }
 
+    if (
+      (
+        familyName.includes('Tio') ||
+        familyName.includes('Tío') ||
+        familyName.includes('_m')
+      ) &&
+      familyName.includes(' y ')
+    ) {
+      return 'Los invitamos a ustedes';
+    }
+
     if (familyName.includes('Tia') || familyName.includes('Tía')) {
       return 'La invitamos a usted';
+    }
+
+    if (familyName.includes('Tio') || familyName.includes('Tío')) {
+      return 'Lo invitamos a usted';
+    }
+
+    if(familyName.includes('*')) {
+      return 'Te invitamos a ti';
     }
 
     return 'Los invitamos a ustedes la familia';

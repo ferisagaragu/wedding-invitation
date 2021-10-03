@@ -15,7 +15,12 @@
       <br>
 
       <strong class="accent-text">
-        {{ familyName }}
+        {{
+          familyName
+            .replace('*', '')
+            .replace('_f', '')
+            .replace('_m', '')
+        }}
       </strong> <br>
       a compartir la magia de nuestro amor
     </h3>
